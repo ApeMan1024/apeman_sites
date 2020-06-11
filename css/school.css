@@ -1,0 +1,63 @@
+/* 图片展览区 */
+.exhi .exhi_top:nth-child(2){
+    margin-top:5px;
+}
+.exhi ul{
+    list-style: none;
+    font-size: 0px;
+}
+.exhi ul li{
+    display: inline-block;
+}
+.exhi ul li:nth-child(2){
+    margin:0 5px;
+}
+.exhi ul li:nth-child(3){
+    margin-right:5px;
+}
+
+.exhi ul li img{
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.exhi ul li img:hover{
+    transform:scale(1.2);
+    box-shadow: 0 0 20px #ccc;
+}
+
+/*块级引用区域*/
+blockquote, q {
+    quotes: "" "";
+}
+blockquote {
+    margin: 0;
+    padding: 30px 60px;
+    background: #f9f9f9;
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+blockquote:before {
+    content: '“'!important;
+    font-size: 4rem;
+    position: absolute;
+    top: -10px;
+    left: 18px;
+    color: #d3deea;
+    font-family: fantasy;
+}
+.entry-content p {
+    line-height: 30px;
+}
+.entry-content p {
+    color: #565656;
+    font-weight: 400;
+}
+blockquote p {
+    margin: 5px 0;
+}
+p {
+    margin-bottom: 1.5em;
+    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+}
