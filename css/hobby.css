@@ -1,0 +1,113 @@
+/*滚动*/
+
+.scroll {
+    width: 780px;
+    overflow: hidden;
+}
+
+.scroll ul {
+    white-space: nowrap;
+}
+
+.scroll ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.scroll ul img {
+    vertical-align: top;
+}
+
+/*块级引用区域*/
+
+blockquote, q {
+    quotes: "" "";
+}
+
+blockquote {
+    margin: 0;
+    padding: 30px 60px;
+    background: #f9f9f9;
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+blockquote:before {
+    content: '“'!important;
+    font-size: 4rem;
+    position: absolute;
+    top: -10px;
+    left: 18px;
+    color: #d3deea;
+    font-family: fantasy;
+}
+
+.entry-content p {
+    line-height: 30px;
+}
+
+.entry-content p {
+    color: #565656;
+    font-weight: 400;
+}
+
+blockquote p {
+    margin: 5px 0;
+}
+
+p {
+    margin-bottom: 1.5em;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
+}
+
+/*画板*/
+.dra{
+    width:780px;
+}
+.paper {
+    width: 100%;
+    height: 25rem;
+    margin: 0 auto;
+    background-image: url("../image/paper.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+#graffiti {
+    width: 780px;
+    height: 390px;
+}
+
+.brush {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#pen1, #pen2 {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#pen1 {
+    margin-left: 100px;
+}
+
+.active {
+    width: 35px;
+    height: 35px;
+    opacity: 0.6;
+}
+
+.clear {
+    background-color: beige !important;
+    padding: 0.5%;
+    border-radius: 5px;
+    width: 45px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: bold !important;
+}

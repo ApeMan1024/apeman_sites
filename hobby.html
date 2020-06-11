@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的爱好</title>
+    <link rel="stylesheet" href="./css/hobby.css">
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <script src="./lib/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./lib/prism/prism.css">
+    <style>
+        /*头部区域*/
+        @import url(css/top.css);
+
+        /*header区域*/
+        @import url(css/header.css);
+
+        /*footer -- 滚动条*/
+        @import url(css/footer.css);
+    </style>
+</head>
+
+<body>
+    <section id="main-container">
+        <div id="page" class="site wrapper">
+            <header class="site-header" role="banner">
+                <div class="site-top">
+                    <div class="lower">
+                        <nav>
+                            <ul id="nav_menu" class="menu">
+                                <li class="current-menu-item"><a href="./apeman.html">首页</a></li>
+                                <li><a href="./me.html">关于</a></li>
+                                <li><a href="./home.html">家乡</a></li>
+                                <li><a href="./school.html">学校</a></li>
+                                <li><a href="./hobby.html">爱好</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div id="content" class="site-content">
+                <div id="primary" class="content-area">
+                    <main id="main" class="site-main" role="main">
+                        <article class="hentry">
+                            <header class="entry-header">
+                                <h1 class="entry-title">我的爱好</h1>
+                            </header>
+                            <div class="entry-content">
+                                <h2>爱好展览|HOBBY</h2>
+                                <div class="scroll">
+                                    <ul>
+                                        <li><img src="./image/img01.jpg" alt="" width="190" height="125"></li>
+                                        <li><img src="./image/img02.jpg" alt="" width="190" height="125"></li>
+                                        <li><img src="./image/img03.jpg" alt="" width="190" height="125"></li>
+                                        <li><img src="./image/img04.jpg" alt="" width="190" height="125"></li>
+                                        <li><img src="./image/img05.jpg" alt="" width="190" height="125"></li>
+                                        <li><img src="./image/img06.jpg" alt="" width="190" height="125"></li>
+                                    </ul>
+                                </div>
+                                <h2>编程|PROGRAMME</h2>
+                                <blockquote>
+                                    <p>编程（biān chéng）是编定程序的中文简称，就是让计算机代为解决某个问题，
+                                        对某个计算体系规定一定的运算方式，使计算体系按照该计算方式运行，并最终得到相应结果的过程</p>
+                                    <p>为了使计算机能够理解（understand）人的意图，人类就必须将需解决的问题的思路、
+                                        方法和手段通过计算机能够理解的形式告诉计算机，
+                                        使得计算机能够根据人的指令一步一步去工作，完成某种特定的任务。这种人和计算体系之间交流的过程就是编程</p>
+                                    <p>我比较喜欢的编程语言：</p>
+                                    <blockquote>
+                                        <p>一、java语言，它是一门面向对象语言，具有跨平台、简单性、面向对象、分布性、编译和解释性、多线程性、动态性的特点</p>
+                                        <p>二、html超文本标记语言，它是网页设计中的一个语言，它作为网页结构的形式存在，通过它与js、css等语言的结合，能够制作出各种美丽的网页</p>
+                                    </blockquote>
+
+                                </blockquote>
+                                <pre>
+
+<code class="language-js line-numbers">import java.util.Arrays;
+public class Paixu {
+    public static void main(String[] args) {
+        int []arr=new int[] {3,1,5,7,3,4,0,10,7,8,2};
+        System.out.println(Arrays.toString(arr));
+        bubbleSort(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+
+    public static void bubbleSort(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            boolean bool = true;
+            for (int j = 1; j <= arr.length - 1 - i; j++) {
+                if (arr[j-1] > arr[j]) {
+                    bool = false;
+                    int temp = arr[j-1];
+                    arr[j-1] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+            if (bool) {
+                break;
+            }
+        }
+
+    }
+}</code>
+                                </pre>
+                                <h2>刷抖音|VIDEO</h2>
+                                <blockquote>
+                                    <p>抖音短视频，是一款音乐创意短视频社交软件，
+                                        由今日头条孵化，该软件于2016年9月20日上线，是一个专注年轻人音乐短视频社区平台。用户可以通过这款软件选择歌曲，
+                                        拍摄音乐短视频，形成自己的作品，会根据用户的爱好，来更新用户喜爱的视频</p>
+                                    <p>抖音实质上是一个专注年轻人的音乐短视频社区，用户可以选择歌曲，配以
+                                        短视频，形成自己的作品。它与小咖秀类似，但不同的是，抖音用户可以通过视频拍摄
+                                        快慢、视频编辑、特效（反复、闪一下、慢镜头）等技术让视频更具创造性，
+                                        而不是简单的对嘴型</p>
+                                    <p>我的观点：</p>
+                                    <blockquote>
+                                        <p>我认为一个人不能一整天都处于工作状态，因此也需要找一些空闲时间进行娱乐活动，
+                                            对于年轻人来说无非就是打球，游戏，刷视频等，我个人不怎么喜欢玩游戏，
+                                            所以选择了刷视频，而抖音这个平台刚好满足了我的需求，
+                                            因此我的兴趣爱好中的一项就是刷抖音，而且是每天都会刷一两个视频的哪种😀</p>
+                                    </blockquote>
+                                </blockquote>
+                                <h2>跑步|RUNNING</h2>
+                                <blockquote>
+                                    <p>每天坚持长跑每天能够让眼睛在跑步过程中直视远方，对眼睛是很好的放松休息。</p>
+                                    <p>作为一个程序员经常需要坐在电脑前，长时间下去我们的颈椎、
+                                        肩部或多或少都会出现一些问题，而正确的跑步姿势要求背部挺直放松，
+                                        因此长期坚持会对颈椎及肩部的不适有很大改善。</p>
+                                    <p>坚持跑步会让我们有一颗强大的心脏及心血管系统功能。
+                                        在提高最大摄氧量的同时向身体各个器官输送的氧量大大增加，
+                                        各个器官的工作质量自然大大提高。另外中长跑会加速血液循环，
+                                        使冠状动脉有足够的血液供给心肌，从而预防各种心脏病。通过下肢的运动，
+                                        促使静脉血流回心脏，还预防静脉内血栓形成。</p>
+                                </blockquote>
+                                <h2>画板|小插曲</h2>
+                                <div class="dra">
+                                    <div class="paper">
+                                        <canvas id="graffiti" width="780" height="390"></canvas>
+                                    </div>
+                                    <div class="brush">
+                                        <p>选择笔刷：</p>
+                                        <img src="./image/pen2.png" id="pen2" alt="">
+                                        <img src="./image/pen1.png" id="pen1" alt="" class="active">
+                                        <p class="clear">清空</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div id="footer" class="site-info">
+            <p>2019-2020-2学期 软件工程 植贞金 201709601266 软件Q174 HTML5开发技术课程设计</p>
+        </div>
+    </footer>
+    <script src="./lib/js/brush.js"></script>
+    <script src="./lib/prism/prism.js"></script>
+    <script src="./lib/js/scroll.js"></script>
+    <script src="./js/hobby.js"></script>
+</body>
+
+</html>
