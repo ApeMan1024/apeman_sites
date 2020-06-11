@@ -1,0 +1,232 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box
+}
+:after, :before {
+    box-sizing: inherit;
+}
+#content {
+    animation: main 1.5s;
+}
+.site-content {
+    max-width: 800px;
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content {
+    animation: main 1.5s;
+}
+@keyframes main{
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.site-content:after, .site-content:before,.entry-content:after, .entry-content:before{
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+.site-main {
+    padding: 80px 0 0;
+    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+}
+.hentry {
+    margin: 0 0 1.5em;
+}
+h1.entry-title {
+    font-size: 23px;
+    font-weight: 600;
+    color: #737373;
+}
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+}
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+.entry-header h1:before {
+    content: "#";
+    margin-right: 6px;
+    color: #ff6d6d;
+    font-size: 20px;
+    font-weight: 600;
+}
+.entry-content h2 {
+    color: #737373;
+    font-size: 20px;
+    margin:12px 0;
+}
+.entry-content h2:before {
+    content: "[";
+    margin-right: 5px;
+    color: #ff6d6d;
+    font-size: 25px;
+    position: relative;
+    top: 2px;
+}
+.entry-content h2:after {
+    content: "]";
+    margin-left: 5px;
+    color: #ff6d6d;
+    font-size: 25px;
+    position: relative;
+    top: 2px;
+}
+
+/*轮播图*/
+.banner {
+    position: relative;
+    overflow: auto;
+    text-align: center;
+}
+.banner li {
+    list-style: none;
+}
+.banner ul li {
+    float: left;
+}
+#b03 {
+    width: 640px;
+}
+#b03 .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+#b03 .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+}
+#b03 .dots li.active {
+    background: #fff;
+    opacity: 1;
+}
+
+
+blockquote, q {
+    quotes: "" "";
+}
+blockquote {
+    margin: 0;
+    padding: 30px 60px;
+    background: #f9f9f9;
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+blockquote:before {
+    content: '“'!important;
+    font-size: 4rem;
+    position: absolute;
+    top: -10px;
+    left: 18px;
+    color: #d3deea;
+    font-family: fantasy;
+}
+.entry-content p {
+    line-height: 30px;
+}
+.entry-content p {
+    color: #565656;
+    font-weight: 400;
+}
+blockquote p {
+    margin: 5px 0;
+}
+p {
+    margin-bottom: 1.5em;
+    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin-bottom: 68%;
+    margin-top:8%;
+    position: relative;
+}
+
+.container img {
+    width: 280px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 3px rgba(50, 50, 50, .4);
+    position: absolute;
+    z-index: 1;
+    background: #fff;
+}
+
+.container img:nth-child(1) {
+    left: 0px;
+    top: 0px;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+.container img:nth-child(2) {
+    left: 300px;
+    top: 0px;
+    -webkit-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+
+.container img:nth-child(3) {
+    left: 600px;
+    top: 0;
+    -webkit-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+
+.container img:nth-child(4) {
+    left: 0px;
+    top: 200px;
+    -webkit-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.container img:nth-child(5) {
+    left: 310px;
+    top: 200px;
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.container img:nth-child(6) {
+    left: 600px;
+    top: 200px;
+    -webkit-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.container img:hover {
+    -webkit-transform: rotate(0deg) scale(1.5);
+    -ms-transform: rotate(0deg) scale(1.5);
+    transform: rotate(0deg) scale(1.5);
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+}
