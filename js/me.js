@@ -15,6 +15,7 @@ $(".play_a").click(function () {
         $("#vi")[0].play();
         let time2 = $("#vi")[0].duration
         $("#hou").text(toFomcat(time2))
+        $("audio").remove()
     }
     else {
         $(".kai").css("display", "block")

@@ -29,7 +29,7 @@
 }
 .site-top ul {
     margin: 0;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     padding: 0;
     list-style: none;
     display: inline-block;
@@ -47,6 +47,11 @@ li {
     display: inline-block;
     color: #fff;
     text-shadow: 0 0 #000, -1px -1px #000, 0 -1px #000, -1px 0 #000;
+    font-weight: bold;
+    transition: all .5s linear;
+}
+.site-top ul li a:hover{
+    color:rgba(0, 191, 255, 0.7);
 }
 a {
     background-color: transparent;

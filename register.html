@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <script src="./lib/js/jquery-3.3.1.min.js"></script>
+
+    <style>
+        /*头部区域*/
+        @import url(css/top.css);
+
+
+        /*header区域*/
+        @import url(css/header.css);
+
+        /*footer -- 滚动条*/
+        @import url(css/footer.css);
+    </style>
+</head>
+
+<body>
+    <section id="main-container">
+        <div id="page" class="site wrapper">
+            <header class="site-header" role="banner">
+                <div class="site-top">
+                    <div class="lower">
+                        <nav>
+                            <ul id="nav_menu" class="menu">
+                                <li class="current-menu-item"><a href="./apeman.html">首页</a></li>
+                                <li><a href="./me.html">关于</a></li>
+                                <li><a href="./home.html">家乡</a></li>
+                                <li><a href="./school.html">学校</a></li>
+                                <li><a href="./hobby.html">爱好</a></li>
+                                <li><a href="./register.html">注册</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div id="content" class="site-content">
+                <div id="primary" class="content-area">
+                    <main id="main" class="site-main" role="main">
+                        <article class="hentry">
+                            <header class="entry-header">
+                                <h1 class="entry-title">用户注册</h1>
+                            </header>
+                            <div class="form-item">
+                                <form action="javascript:;">
+                                    <div class="item">
+                                        <p>
+                                            <label for="username">用户名：</label>
+                                            <input type="text" name="username" id="username" required placeholder="用户名"
+                                                 autocomplete="off" maxlength="10"><span>6-10位</span>
+                                                <span class="active">用户名不能少于6位</span>
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <p>
+                                            <label for="username">密码：</label>
+                                            <input type="password" name="password" id="password" required placeholder="密码"
+                                                 autocomplete="off" maxlength="16"><span>只能由字母和数字组成8-16位</span>
+                                                <span class="active">密码格式不正确</span>
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <p>
+                                            <label for="email">邮箱：</label>
+                                            <input type="email" name="email" id="email" required placeholder="邮箱"
+                                                 autocomplete="off" >
+                                                <span class="active">邮箱格式不正确</span>
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <p>
+                                            <label for="phone">手机号码：</label>
+                                            <input type="text" name="phone" id="phone" required placeholder="手机号码"
+                                                 autocomplete="off" >
+                                                <span class="active">手机号码格式不正确</span>
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <p><input type="submit" value="注册" id="sub"></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </article>
+                        
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div id="footer" class="site-info">
+            <p>2019-2020-2学期 软件工程 植贞金 201709601266 软件Q174 HTML5开发技术课程设计</p>
+        </div>
+    </footer>
+    <script src="./js/register.js"></script>
+    <script src="./js/audio.js"></script>
+    <script src="./lib/js/nest.js"></script>
+</body>
+
+</html>

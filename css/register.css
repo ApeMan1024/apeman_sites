@@ -1,0 +1,44 @@
+.form-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:11% 0;
+}
+.form-item .item{
+    margin:10px 0;
+    min-height: 52px;
+}
+.form-item .item label{
+    display: inline-block;
+    font-weight: bold !important;
+    font-size: 16px;
+    width:100px;
+    text-align: justify;
+    text-align-last: justify;
+}
+.form-item .item input{
+    width:200px;
+    height:30px;
+    margin:0 10px;
+    border:1px solid #000;
+    border-radius: 3px;
+}
+.form-item .item input:focus{
+    border:1px solid mediumaquamarine;
+}
+.form-item .item .error{
+    display:block;
+    margin-left: 110px;
+    color:red;
+}
+.form-item .item .active{
+    display: none;
+}
+#sub{
+    background:#fff;
+    cursor: pointer;
+}
+#sub:hover{
+    border:1px solid mediumaquamarine;
+}
+
